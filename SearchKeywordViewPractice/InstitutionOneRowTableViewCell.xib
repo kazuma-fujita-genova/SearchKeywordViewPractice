@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="295" id="KGk-i7-Jjw" customClass="InstitutionOneRowTableViewCell" customModule="SearchKeywordViewPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="295"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="294.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ty8-dV-hLo" customClass="FSPagerView" customModule="FSPagerView">
+                        <rect key="frame" x="16" y="16" width="378" height="212.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYa-A6-pba" customClass="CHIPageControlAleppo" customModule="CHIPageControl">
+                                <rect key="frame" x="0.0" y="182.5" width="378" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Wzh-mn-alw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DYa-A6-pba" firstAttribute="leading" secondItem="Ty8-dV-hLo" secondAttribute="leading" id="4fK-sr-0bI"/>
+                            <constraint firstAttribute="width" secondItem="Ty8-dV-hLo" secondAttribute="height" multiplier="16:9" id="BVG-Oo-HDN"/>
+                            <constraint firstAttribute="bottom" secondItem="DYa-A6-pba" secondAttribute="bottom" id="frJ-Fy-5vy"/>
+                            <constraint firstAttribute="trailing" secondItem="DYa-A6-pba" secondAttribute="trailing" id="rId-fO-AUA"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医院名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0L-3X-WzJ">
+                        <rect key="frame" x="16" y="236.5" width="52" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF9-Oj-BkS">
+                        <rect key="frame" x="16" y="263.5" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ty8-dV-hLo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="5vq-ME-zuK"/>
+                    <constraint firstItem="eF9-Oj-BkS" firstAttribute="top" secondItem="y0L-3X-WzJ" secondAttribute="bottom" constant="8" id="6k4-ir-NXd"/>
+                    <constraint firstItem="Ty8-dV-hLo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OIA-st-fzy"/>
+                    <constraint firstItem="eF9-Oj-BkS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WED-2C-5xp"/>
+                    <constraint firstAttribute="bottom" secondItem="eF9-Oj-BkS" secondAttribute="bottom" constant="10" id="jeb-Xc-yAe"/>
+                    <constraint firstItem="y0L-3X-WzJ" firstAttribute="top" secondItem="Ty8-dV-hLo" secondAttribute="bottom" constant="8" id="jmo-Wb-uHm"/>
+                    <constraint firstItem="y0L-3X-WzJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="mAL-Zi-b8m"/>
+                    <constraint firstAttribute="trailing" secondItem="Ty8-dV-hLo" secondAttribute="trailing" constant="16" id="sI8-Rc-mEz"/>
+                    <constraint firstItem="Ty8-dV-hLo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="t0f-TM-Boq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="eF9-Oj-BkS" id="E3z-jY-YR8"/>
+                <outlet property="nameLabel" destination="y0L-3X-WzJ" id="P7f-x5-j2B"/>
+                <outlet property="pageControl" destination="DYa-A6-pba" id="CZ3-8t-RGd"/>
+                <outlet property="pagerView" destination="Ty8-dV-hLo" id="LPo-E0-upq"/>
+            </connections>
+            <point key="canvasLocation" x="91.200000000000003" y="54.422788605697157"/>
+        </tableViewCell>
+    </objects>
+</document>

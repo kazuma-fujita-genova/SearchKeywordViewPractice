@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="231" id="KGk-i7-Jjw" customClass="InstitutionTwoRowsTableViewCell" customModule="SearchKeywordViewPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="487" height="230.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="5Y2-65-0aq">
+                        <rect key="frame" x="0.0" y="0.0" width="487" height="191.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="tPN-ah-hkd">
+                                <rect key="frame" x="0.0" y="0.0" width="227" height="191.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dIq-TR-Wtz">
+                                        <rect key="frame" x="8" y="8" width="211" height="118.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dIq-TR-Wtz" secondAttribute="height" multiplier="16:9" id="xwH-wW-pM4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医院名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiY-JH-jYU">
+                                        <rect key="frame" x="8" y="134.5" width="52" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61b-uV-nb5">
+                                        <rect key="frame" x="8" y="163" width="35" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="61b-uV-nb5" firstAttribute="leading" secondItem="tPN-ah-hkd" secondAttribute="leading" constant="8" id="219-Sf-1TL"/>
+                                    <constraint firstItem="ZiY-JH-jYU" firstAttribute="leading" secondItem="tPN-ah-hkd" secondAttribute="leading" constant="8" id="DzH-Tt-BQd"/>
+                                    <constraint firstAttribute="bottom" secondItem="61b-uV-nb5" secondAttribute="bottom" constant="8" id="E9R-sb-9Ne"/>
+                                    <constraint firstItem="61b-uV-nb5" firstAttribute="top" secondItem="ZiY-JH-jYU" secondAttribute="bottom" constant="8" id="I3P-uH-JIV"/>
+                                    <constraint firstItem="ZiY-JH-jYU" firstAttribute="top" secondItem="dIq-TR-Wtz" secondAttribute="bottom" constant="8" id="IBG-gq-AOj"/>
+                                    <constraint firstItem="dIq-TR-Wtz" firstAttribute="top" secondItem="tPN-ah-hkd" secondAttribute="top" constant="8" id="bFF-Gm-2Wj"/>
+                                    <constraint firstAttribute="trailing" secondItem="dIq-TR-Wtz" secondAttribute="trailing" constant="8" id="gHg-uB-5Ug"/>
+                                    <constraint firstItem="dIq-TR-Wtz" firstAttribute="leading" secondItem="tPN-ah-hkd" secondAttribute="leading" constant="8" id="uje-9i-a7D"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-So-73z">
+                                <rect key="frame" x="253" y="0.0" width="234" height="191.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-sR-Yti">
+                                        <rect key="frame" x="8" y="8" width="218" height="122.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ojs-sR-Yti" secondAttribute="height" multiplier="16:9" id="p09-N4-jaR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医院名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLf-jF-1jx">
+                                        <rect key="frame" x="8" y="138.5" width="52" height="24.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tur-Mg-D2a">
+                                        <rect key="frame" x="8" y="171" width="35" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ojs-sR-Yti" firstAttribute="top" secondItem="Cdw-So-73z" secondAttribute="top" constant="8" id="IpG-8f-geH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ojs-sR-Yti" secondAttribute="trailing" constant="8" id="PvK-EK-t8T"/>
+                                    <constraint firstItem="Ojs-sR-Yti" firstAttribute="leading" secondItem="Cdw-So-73z" secondAttribute="leading" constant="8" id="TpH-mv-9rj"/>
+                                    <constraint firstItem="nLf-jF-1jx" firstAttribute="leading" secondItem="Cdw-So-73z" secondAttribute="leading" constant="8" id="qE9-6a-Jvl"/>
+                                    <constraint firstItem="nLf-jF-1jx" firstAttribute="top" secondItem="Ojs-sR-Yti" secondAttribute="bottom" constant="8" id="txg-9C-W3u"/>
+                                    <constraint firstItem="tur-Mg-D2a" firstAttribute="leading" secondItem="Cdw-So-73z" secondAttribute="leading" constant="8" id="wFm-vx-ZPM"/>
+                                    <constraint firstItem="tur-Mg-D2a" firstAttribute="top" secondItem="nLf-jF-1jx" secondAttribute="bottom" constant="8" id="xtd-IM-IOq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Cdw-So-73z" firstAttribute="centerX" secondItem="5Y2-65-0aq" secondAttribute="centerX" id="O3N-TQ-vHT"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Y2-65-0aq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4gh-Ay-nzI"/>
+                    <constraint firstItem="5Y2-65-0aq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="mmu-yp-vwY"/>
+                    <constraint firstAttribute="trailing" secondItem="5Y2-65-0aq" secondAttribute="trailing" id="rOZ-Hn-bla"/>
+                    <constraint firstAttribute="bottom" secondItem="5Y2-65-0aq" secondAttribute="bottom" id="ts5-JM-Xyn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel1" destination="61b-uV-nb5" id="8Wr-LQ-LmC"/>
+                <outlet property="addressLabel2" destination="tur-Mg-D2a" id="35m-R5-pqr"/>
+                <outlet property="institutionImageView1" destination="dIq-TR-Wtz" id="C7n-8V-96j"/>
+                <outlet property="institutionImageView2" destination="Ojs-sR-Yti" id="RA5-b6-aDB"/>
+                <outlet property="nameLabel1" destination="ZiY-JH-jYU" id="diJ-vm-9Rh"/>
+                <outlet property="nameLabel2" destination="nLf-jF-1jx" id="JgV-Q5-rIj"/>
+            </connections>
+            <point key="canvasLocation" x="169" y="162"/>
+        </tableViewCell>
+    </objects>
+</document>
